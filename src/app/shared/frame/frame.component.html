@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<ion-menu contentId="menuId" side="start" type="overlay">
+  <ion-content class="ion-padding" *ngIf="user != null">
+    <ion-list lines="none">
+      <ion-item-divider>
+        <ion-label>&nbsp;</ion-label>
+      </ion-item-divider>
+      <ion-item class="clickable" (click)="goToPage('')">
+        <ion-icon slot="start" color="light" name="home"></ion-icon> Home
+      </ion-item>
+      <ion-item class="clickable" (click)="goToPage('tourist-spots')">
+        <ion-icon slot="start" color="light" name="globe"></ion-icon> Categories
+      </ion-item>
+      <ion-item class="clickable" (click)="goToPage('tourist-spots')">
+        <ion-icon slot="start" color="light" name="airplane"></ion-icon> Tourist Spots
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet main>
+</ion-router-outlet>

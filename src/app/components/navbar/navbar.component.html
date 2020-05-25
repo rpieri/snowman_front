@@ -1,0 +1,10 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Snowman Tourist Spots</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button id="menuId"></ion-menu-button>
+    </ion-buttons>
+    <app-login slot="end" *ngIf="user == null"></app-login>
+    <app-user-card slot="end" *ngIf="user != null"></app-user-card>
+  </ion-toolbar>
+</ion-header>

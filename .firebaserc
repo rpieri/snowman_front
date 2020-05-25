@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "snowman-test-tourist-spots": {
+      "hosting": {
+        "app": [
+          "snowman-test-tourist-spots"
+        ]
+      }
+    }
+  }
+}

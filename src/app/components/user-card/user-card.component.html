@@ -1,0 +1,7 @@
+<ion-item>
+  <img src="{{ user?.photoURL }}" alt="{{ user?.displayName}}" class="ion-padding">
+  <ion-label>{{ user?.displayName }}</ion-label>
+  <ion-item class="clickable" (click)="logout()" slot="end">
+    <ion-icon slot="start" color="light" name="exit"></ion-icon> Exit
+  </ion-item>
+</ion-item>
